@@ -1,0 +1,8 @@
+.hero{
+    background: url(../../assets/bg-shadow.png);
+
+}
+.box {
+    border: 2px solid black;
+    outline: 4px solid blue;
+}

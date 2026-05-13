@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "name": "Virat Kohli",
+    "country": "India",
+    "rating": 92,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm medium",
+    "price": "$18",
+    "img": "https://i.imgur.com/1KQvZ2K.png"
+  },
+  {
+    "id": 2,
+    "name": "Babar Azam",
+    "country": "Pakistan",
+    "rating": 90,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "None",
+    "price": "$16",
+    "img": "https://i.imgur.com/3QfQ9Zb.png"
+  },
+  {
+    "id": 3,
+    "name": "Joe Root",
+    "country": "England",
+    "rating": 88,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm offbreak",
+    "price": "$14",
+    "img": "https://i.imgur.com/8Q1vZ3a.png"
+  },
+  {
+    "id": 4,
+    "name": "Kane Williamson",
+    "country": "New Zealand",
+    "rating": 89,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm offbreak",
+    "price": "$15",
+    "img": "https://i.imgur.com/5vQzZ2c.png"
+  },
+  {
+    "id": 5,
+    "name": "Steve Smith",
+    "country": "Australia",
+    "rating": 91,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm legbreak",
+    "price": "$17",
+    "img": "https://i.imgur.com/2QxZ9Ab.png"
+  },
+  {
+    "id": 6,
+    "name": "Shakib Al Hasan",
+    "country": "Bangladesh",
+    "rating": 93,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Left-arm orthodox",
+    "price": "$20",
+    "img": "https://i.imgur.com/9QzX1Ab.png"
+  },
+  {
+    "id": 7,
+    "name": "Rohit Sharma",
+    "country": "India",
+    "rating": 89,
+    "battingStyle": "Right-hand bat",
+    "bowlingStyle": "Right-arm offbreak",
+    "price": "$16",
+    "img": "https://i.imgur.com/7QwZ8Ab.png"
+  },
+  {
+    "id": 8,
+    "name": "Ben Stokes",
+    "country": "England",
+    "rating": 90,
+    "battingStyle": "Left-hand bat",
+    "bowlingStyle": "Right-arm fast-medium",
+    "price": "$19",
+    "img": "https://i.imgur.com/6QeZ2Ab.png"
+  }
+]
