@@ -1,7 +1,7 @@
 import  DollerSVG  from "../../assets/Vector.svg";
-const NavBar = () => {
+const NavBar = ({coin}) => {
     return (
-        <div className="container mx-auto">
+        <div className="w-10/12 mx-auto">
 
 <div className="navbar bg-base-100 shadow-sm">
   <div className="flex-1">
@@ -9,7 +9,7 @@ const NavBar = () => {
   </div>
   <div className="flex-none">
     <button className="btn btn-squar font-bold text-xl">
-      0 Coin
+      {coin} Coin
       <img src={DollerSVG} alt="" />
     </button>
   </div>

@@ -2,7 +2,7 @@ import "./Banner.css";
 import BannerImg from "../../assets/banner-main.png";
 const Banner = () => {
     return (
-      <div className="container mx-auto bg-gray-900 rounded-2xl">
+      <div className="w-10/12 mx-auto bg-gray-900 rounded-2xl">
         <div className=" hero  min-h-screen">
        <div className="hero-content text-center ">
     <div className=" flex flex-col items-center justify-center">
