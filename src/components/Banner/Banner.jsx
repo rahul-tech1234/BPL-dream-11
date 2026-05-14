@@ -2,8 +2,9 @@ import "./Banner.css";
 import BannerImg from "../../assets/banner-main.png";
 const Banner = () => {
     return (
-        <div className="hero bg-base-200 min-h-screen rounded-2xl ">
-  <div className="hero-content text-center ">
+      <div className="container mx-auto bg-gray-900 rounded-2xl">
+        <div className=" hero  min-h-screen">
+       <div className="hero-content text-center ">
     <div className=" flex flex-col items-center justify-center">
         <img src={BannerImg} alt=""  />
       <h1 className="text-5xl font-bold text-[white]">Assemble Your Ultimate Dream 11 Cricket Team</h1>
@@ -14,6 +15,7 @@ const Banner = () => {
 
 
     </div>
+  </div>
   </div>
 </div>
 

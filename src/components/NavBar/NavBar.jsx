@@ -1,7 +1,7 @@
 import  DollerSVG  from "../../assets/Vector.svg";
 const NavBar = () => {
     return (
-        <div>
+        <div className="container mx-auto">
 
 <div className="navbar bg-base-100 shadow-sm">
   <div className="flex-1">
