@@ -3,6 +3,7 @@ import NavBar from "./components/NavBar/NavBar";
 import Banner from "./components/Banner/Banner";
 import Players from "./components/Players/Players"
 import { Suspense, useState } from 'react';
+  import { ToastContainer } from 'react-toastify';
 const fetchPlayers=async()=>{
   const res=await fetch("/PlayersData.json");
   return res.json();
@@ -21,6 +22,8 @@ function App() {
        <Suspense fallback={<span className="loading loading-dots loading-xl"></span>}>
           <Players PlayersPromise={PlayersPromise} setCoin={setCoin} coin={coin}></Players>
         </Suspense>
+
+ <ToastContainer />
         </main>
     </>
   )

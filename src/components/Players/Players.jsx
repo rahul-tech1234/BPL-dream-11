@@ -3,12 +3,13 @@ import AvailablePlayers from "../AvalaiblePlayers/AvailablePlayers";
 import SelectedPlayers from "../SelectedPlayers/SelectedPlayers";
 const Players = ({PlayersPromise,setCoin,coin}) => {
     const Players=use(PlayersPromise);
+    
    const [selectedType,setSelectedType]=useState("available");
    const [selectedPlayers,setSelectedPlayers]=useState([]);
    return (
         <div className="w-10/12 mx-auto">
             <div className="flex justify-between mt-12.5 mb-6">
-                {selectedType==="available"? <h2 className="text-2xl font-bold">Available Players</h2>:<h2 className="text-2xl font-bold">Selected (2/6)</h2>}
+                {selectedType==="available"? <h2 className="text-2xl font-bold">Available Players</h2>:<h2 className="text-2xl font-bold">Selected ({selectedPlayers.length}/{Players.length})</h2>}
                 
                 <div className="flex">
                     <button
@@ -16,14 +17,14 @@ const Players = ({PlayersPromise,setCoin,coin}) => {
                      className={`btn ${selectedType==="available"?"btn-warning":"btn-soft"}  text-black rounded-r-none rounded-l-xl`}>Available</button>
                     <button 
                     onClick={()=>{setSelectedType("selected")}}
-                    className={`btn btn-warning text-black rounded-l-none rounded-r-xl ${selectedType==="selected"?"btn-warning":"btn-soft"}`}>Selected (0)</button>
+                    className={`btn btn-warning text-black rounded-l-none rounded-r-xl ${selectedType==="selected"?"btn-warning":"btn-soft"}`}>Selected ({selectedPlayers.length})</button>
                 </div>
 
             </div>
             
             {selectedType==="available"?
             <AvailablePlayers Players={Players} setCoin={setCoin} coin={coin} setSelectedPlayers={setSelectedPlayers} selectedPlayers={selectedPlayers}></AvailablePlayers>
-            :<SelectedPlayers selectedPlayers={selectedPlayers}></SelectedPlayers>}
+            :<SelectedPlayers selectedPlayers={selectedPlayers} setSelectedPlayers={setSelectedPlayers} setCoin={setCoin} coin={coin}></SelectedPlayers>}
         </div>
 
     );

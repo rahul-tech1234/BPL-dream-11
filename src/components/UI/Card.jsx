@@ -1,19 +1,21 @@
 import { useState } from "react";
 import { FaUserAlt} from "react-icons/fa";
 import { IoFlag } from "react-icons/io5";
+import { toast } from "react-toastify";
 const Card = ({player,setCoin,coin,selectedPlayers,setSelectedPlayers}) => {
     const [isSelected,setIsSelected]=useState(false);
     const handleChosePlayer=()=>{
         const newCoin=coin-Number(player.price);
         if (newCoin>=0) {
             setCoin(coin-Number(player.price));
-            alert(`${player.name} is selected`);
+           // alert();
+           toast(`${player.name} is selected`);
         }else{
-            alert("Not Enough Coin");
+            toast.warning("Not Enough Coin");
             return
         }
         setIsSelected(true);
-        setSelectedPlayers(...selectedPlayers,player);
+        setSelectedPlayers([...selectedPlayers,player]);
     }
     //console.log(coin,Number(player.price)) 
     return (
@@ -21,7 +23,8 @@ const Card = ({player,setCoin,coin,selectedPlayers,setSelectedPlayers}) => {
   <figure>
     <img
       src={player.img}
-      alt="Shoes" />
+      alt="Shoes"
+      className="h-50 w-full" />
   </figure>
   <div className="card-body">
     <h2 className="card-title"><FaUserAlt /> {player.name}</h2>
